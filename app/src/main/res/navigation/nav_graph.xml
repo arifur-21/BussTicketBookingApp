@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigationFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.busbookingapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminAddBusInfoFragment"
+            app:destination="@id/adminAddBusInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.busbookingapp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.example.busbookingapp.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_busFragment"
+            app:destination="@id/busFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_getTicketFragment"
+            app:destination="@id/getTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/busFragment"
+        android:name="com.example.busbookingapp.BusFragment"
+        android:label="fragment_bus"
+        tools:layout="@layout/fragment_bus" >
+        <action
+            android:id="@+id/action_busFragment_to_seatFragment"
+            app:destination="@id/seatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seatFragment"
+        android:name="com.example.busbookingapp.SeatFragment"
+        android:label="fragment_seat"
+        tools:layout="@layout/fragment_seat" >
+        <action
+            android:id="@+id/action_seatFragment_to_startPointTbFragment"
+            app:destination="@id/startPointTbFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paybleFragment"
+        android:name="com.example.busbookingapp.PaybleFragment"
+        android:label="fragment_payble"
+        tools:layout="@layout/fragment_payble" >
+        <action
+            android:id="@+id/action_paybleFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardInformatinFragment"
+        android:name="com.example.busbookingapp.CardInformatinFragment"
+        android:label="fragment_card_informatin"
+        tools:layout="@layout/fragment_card_informatin" >
+        <action
+            android:id="@+id/action_cardInformatinFragment_to_customerInfoFragment"
+            app:destination="@id/customerInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerInfoFragment"
+        android:name="com.example.busbookingapp.CustomerInfoFragment"
+        android:label="fragment_customer_info"
+        tools:layout="@layout/fragment_customer_info" >
+        <action
+            android:id="@+id/action_customerInfoFragment_to_placePointFragment"
+            app:destination="@id/placePointFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placePointFragment"
+        android:name="com.example.busbookingapp.PlacePointFragment"
+        android:label="fragment_place_point"
+        tools:layout="@layout/fragment_place_point" />
+    <fragment
+        android:id="@+id/startPointTbFragment"
+        android:name="com.example.busbookingapp.StartPointTbFragment"
+        android:label="fragment_start_point_tb"
+        tools:layout="@layout/fragment_start_point_tb" >
+        <action
+            android:id="@+id/action_startPointTbFragment_to_paybleFragment"
+            app:destination="@id/paybleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endPointTbFragment"
+        android:name="com.example.busbookingapp.EndPointTbFragment"
+        android:label="fragment_end_point_tb"
+        tools:layout="@layout/fragment_end_point_tb" />
+    <fragment
+        android:id="@+id/getTicketFragment"
+        android:name="com.example.busbookingapp.GetTicketFragment"
+        android:label="fragment_get_ticket"
+        tools:layout="@layout/fragment_get_ticket" />
+    <fragment
+        android:id="@+id/adminAddBusInfoFragment"
+        android:name="com.example.busbookingapp.AdminAddBusInfoFragment"
+        android:label="fragment_admin_add_bus_info"
+        tools:layout="@layout/fragment_admin_add_bus_info" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.busbookingapp.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_paymentGatewayFragment"
+            app:destination="@id/paymentGatewayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentGatewayFragment"
+        android:name="com.example.busbookingapp.PaymentGatewayFragment"
+        android:label="fragment_payment_gateway"
+        tools:layout="@layout/fragment_payment_gateway" />
+</navigation>

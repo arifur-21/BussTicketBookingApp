@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BusBookingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+
+    <string-array name="from_bus">
+        <item>From</item>
+        <item>Dhaka</item>
+        <item>Rampur</item>
+        <item>Rajshai</item>
+        <item>Rongpur</item>
+        <item>Feni</item>
+    </string-array>
+
+    <string-array name="to_bus">
+        <item>To</item>
+        <item>Dhaka</item>
+        <item>Rampur</item>
+        <item>Rajshai</item>
+        <item>Rongpur</item>
+        <item>Feni</item>
+    </string-array>
+</resources>

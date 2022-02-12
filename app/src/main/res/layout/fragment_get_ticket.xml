@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    tools:context=".GetTicketFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:padding="10dp"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="Customer Details"
+        android:textAlignment="center"
+        android:background="#E64A19"
+        android:textColor="@color/white"
+        />
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="3"
+       android:background="@color/white"
+       android:orientation="horizontal">
+
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:layout_weight="1.4"
+           android:textSize="18sp"
+           android:text="Customer_Name    :"
+           android:background="#3A416E"
+           android:textColor="@color/white"
+           />
+       <TextView
+           android:background="#3A416E"
+           android:textColor="@color/white"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1.6"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:id="@+id/getTicketUserNameId"
+           android:text="Arifur islam"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:textSize="18sp"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:text="Customer_Email     :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:id="@+id/getTicketUserEmailId"
+            android:text="Arif@gmail.com"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Customer_Phone    :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:textSize="18sp"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/getTicketUserPhoneId"
+            android:text="01XXXXXXXXX"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1.4"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Travel_Name            :"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:textSize="18sp"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/getTicketTravelNameId"
+                android:text="Star Line"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1.4"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Bus_Condition         :"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:textSize="18sp"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/getTicketBusConditiond"
+                android:text="Ac/Non-Ac"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1.4"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Bus_Number           :"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:textSize="18sp"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/getTicketBusNumberId"
+                android:text="K30838g"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="From                           :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:textSize="18sp"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/getTicketFromId"
+            android:text=" Feni"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:textSize="18sp"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:text="To                                :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:id="@+id/getTicketToId"
+            android:text=" Dhaka"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1.4"
+                android:textSize="18sp"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:text="Booking Date            :"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#3A416E"
+                android:textColor="@color/white"
+                android:id="@+id/getTicketBookingDateId"
+                android:text=" 12/12/2022"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Number Of Seats     :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textSize="18sp"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/getTicketNumberOfSeatId"
+            android:text=" 03"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.4"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Total Cost                  :"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#3A416E"
+            android:textColor="@color/white"
+            android:id="@+id/getTicketTotalCostId"
+            android:text=" 0.0"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
